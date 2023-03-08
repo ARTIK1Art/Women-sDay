@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+
+body{
+    font-family: 'Cormorant';
+    font-weight: 600;   
+    height: 100%;
+}
+/* Обнуление */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+.header__container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.congratulation__container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex; 
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+.page {
+    flex: 1 1 auto;
+    background-color: #F98866;
+}
+.header {
+    display: flex;
+    background-color: #F52549;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.header h1 {
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+.poem {
+
+}
+.congratulation {
+    position: relative;
+    margin: 30px 0px 30px 0px;
+}
+
+.congratulation::before {
+    content: "";
+    position: relative;
+    width: 100px;
+    z-index: 10;
+    height: 100px;
+    background-image: url("img/free-icon-heart-1550594.png")  no-repeat;
+}
+.congratulation__poem {
+    flex: 1 1 50%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.congratulation__img {
+    flex: 1 1 100%;
+}
+.congratulation__img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.footer {
+    background-color: #F55449;
+    height: 60px;
+    color: #fff;
+    font-weight: 500;
+}
+.footer__owner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.footer__owner h2 {
+    margin-left: 20px;
+}
